@@ -38,6 +38,15 @@ tek_boyutlu_correlation_matrix.r
 > corrplot(cor_data, method="color")
 
 
+# heat_map_benzeri
+library(ggcorrplot)
+ggcorrplot(cor(data1))
+
+# degiskeni kontrol et
+library(ggcorrplot)
+ggcorrplot(cor(cor_data))
+
+
 # eski komutlar
 x = read.csv("denemecsv.csv")
 xlsx::write.xlsx(x, "denemex.xlsx")
